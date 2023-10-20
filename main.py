@@ -2,8 +2,7 @@ import discord
 from discord.ext import commands
 
 def main():
-intents = discord.Intents().all()
-client = commands.Bot(command_prefix='u!', intents=intents)
+client = commands.Bot(command_prefix='u!')
 client.remove_command('info')
 
 @client.event
